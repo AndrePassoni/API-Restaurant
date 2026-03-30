@@ -5,4 +5,5 @@ import { Router } from "express";
 export const tablesSessionsRoutes = Router()
 const tableSessionsController = new TableSessionsController
 
+tablesSessionsRoutes.get("/", tableSessionsController.index)
 tablesSessionsRoutes.post("/", tableSessionsController.create)
